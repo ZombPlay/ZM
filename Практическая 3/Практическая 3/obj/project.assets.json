@@ -8,24 +8,23 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\ИСП-21\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\исп-21\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ИСП-21\\Desktop\\Носов ИСП-11 11 в\\Практическая 3\\Практическая 3\\Практическая 3.csproj",
+      "projectUniqueName": "C:\\Users\\исп-21\\source\\repos\\Практическая 3\\Практическая 3\\Практическая 3.csproj",
       "projectName": "Практическая 3",
-      "projectPath": "C:\\Users\\ИСП-21\\Desktop\\Носов ИСП-11 11 в\\Практическая 3\\Практическая 3\\Практическая 3.csproj",
-      "packagesPath": "C:\\Users\\ИСП-21\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ИСП-21\\Desktop\\Носов ИСП-11 11 в\\Практическая 3\\Практическая 3\\obj\\",
+      "projectPath": "C:\\Users\\исп-21\\source\\repos\\Практическая 3\\Практическая 3\\Практическая 3.csproj",
+      "packagesPath": "C:\\Users\\исп-21\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\исп-21\\source\\repos\\Практическая 3\\Практическая 3\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\ИСП-21\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\исп-21\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -33,7 +32,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -57,8 +55,7 @@
           "net47",
           "net471",
           "net472",
-          "net48",
-          "net481"
+          "net48"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -67,7 +64,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }
