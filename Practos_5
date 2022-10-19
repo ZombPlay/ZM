@@ -1,0 +1,28 @@
+Console.Write("Введите x: ");
+double x = double.Parse(Console.ReadLine());
+
+if (0 >= x || x >= Math.PI)
+{
+    Console.WriteLine("х введён неправильно :(");
+    return;
+}
+
+double calcFunc = 0;
+double anltFunc = Math.PI / 4;
+
+for (int n = 0; n <= 100; n++)
+{
+    calcFunc = calcFunc + (Math.Sin((2 * n + 1) * x) / (2 * n + 1));
+}
+
+Console.WriteLine($"Результат функции = {calcFunc}");
+Console.WriteLine($"Аналитическая функция = {anltFunc}");
+
+if (Math.Abs(calcFunc - anltFunc) < 0.1) //проверяем на совпадение
+{
+    Console.WriteLine("Расчёт проведён правильно");
+}
+else
+{
+    Console.WriteLine("Расчёт произведён неправильно");
+}
