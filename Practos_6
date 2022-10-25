@@ -1,0 +1,22 @@
+/*
+Выяснить, является ли заданное число n членом арифметической прогрессии,
+первый член которой равен f, а шаг — s
+*/
+
+Console.Write("Введите первый член арифметической прогрессии: ");
+int f = int.Parse(Console.ReadLine());
+
+Console.Write("Введите шаг арифметической прогрессии: ");
+int s = int.Parse(Console.ReadLine());
+
+Console.Write("Введите своё число: ");
+int n = int.Parse(Console.ReadLine());
+
+if (s != 0)
+    while (s > 0 ? n > f : n < f)
+        n -= s;
+
+if (n == f)
+    Console.WriteLine("Число принадлежит арифметической прогрессии");
+else
+    Console.WriteLine("Число не принадлежит арифметической прогрессии");
