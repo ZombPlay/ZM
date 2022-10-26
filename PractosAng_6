@@ -1,0 +1,31 @@
+int cht = 0;
+int kol = 0;
+int r;
+Console.Write("Введите число - ");
+int value = Convert.ToInt32(Console.ReadLine());
+
+while (value != 0)
+{
+    r = value % 10;
+    if (r == 0)
+    {
+        cht++;
+    }
+    else if (r == 9)
+    {
+        kol++;
+    }
+}
+if (kol == cht)
+{
+    Console.WriteLine("Количество 0 и 9 одинаковое");
+}
+else if (kol > cht)
+{
+    Console.WriteLine("Цифра 9 встречается чаще");
+}
+else
+{
+    Console.WriteLine("Цифра 0 встречается чаще");
+}
+Console.ReadKey();
