@@ -3,6 +3,7 @@ Console.Write("Введите количество строк: ");
 int n = int.Parse(Console.ReadLine());
 Console.Write("Введите количество столбцов: ");
 int m = int.Parse(Console.ReadLine());
+int min = 50;
 
 int[,] matr = new int[n, m];
 Random rnd = new Random();
@@ -16,14 +17,13 @@ for (int i = 0; i < n; i++)
     }
     Console.WriteLine();
 }
-int min = 0;
 for (int i = 0; i < n; i++)
 {
     for (int j = 0; j < i; j++)
     {
-        if (matr[i, j] != matr[i, i]) { }
-        else if (min > matr[i, j])
-                min = matr[i, j];
+        if (matr[i, j] != matr[i, i]) 
+         if (min > matr[i, j])
+            min = matr[i, j];
     }
 }
 Console.Write($"Минимальное число: {min}");
