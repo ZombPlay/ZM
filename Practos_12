@@ -1,0 +1,28 @@
+/* Подсчитать количество цифр «5», «6» и «7» (в отдельности), содержащихся в 
+заданной строке. Дополнить строку этими цифрами так, чтобы их количество стало 
+равным. */
+Console.Write("Введите несколько цифр - ");
+string str = Console.ReadLine();
+int five = 0;
+int six = 0;
+int seven = 0;
+for (int i = 0; i < str.Length; i++)
+{
+    if (str[i] == '5')
+        five++;
+    if (str[i] == '6')
+        six++;
+    if (str[i] == '7')
+        seven++;
+}
+Console.WriteLine($"Количество цифр: 5 - {five}, 6 - {six}, 7 - {seven}");
+
+int max = Math.Max(five,(Math.Max(six, seven)));
+
+for (int j = five; five < max; five++)
+    str += '5';
+for (int k = six; six < max; six++)
+    str += '6';
+for (int z = seven; seven < max; seven++)
+    str += '7';
+Console.WriteLine($"Конечный вариант строки - {str}");
