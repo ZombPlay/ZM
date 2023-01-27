@@ -1,0 +1,45 @@
+// Практическая работа #14 
+/*Описать функцию IsPowerN(K, N) логического типа, возвращающую True, 
+если целый параметр K (> 0) является степенью числа N (> 1), и False в противном случае. 
+Дано число N (> 1) и набор из 10 целых положительных чисел. С помощью функции 
+IsPowerN найти количество степеней числа N в данном наборе. */
+Console.Write("Введите значение N: ");
+int N = int.Parse(Console.ReadLine());
+bool IsPowerN(int K, int N)
+{
+    double degree = 1;
+    for (int i = 0; degree < K; i++)
+    {
+        degree = Math.Pow(N, i);
+        if (degree == K) return true;
+    }
+    return false;
+}
+
+int count = 0; //Счётчик возвращённых значений True
+
+Console.Write("Введите значения K по очереди через Enter: ");
+for (int i = 0; i < 10; i++)
+{
+    int k = int.Parse(Console.ReadLine());
+    Console.WriteLine(IsPowerN(k, N));
+    if (IsPowerN(k, N) == true) count++;
+}
+Console.WriteLine($"Количество правильных степеней: {count}");
+
+//2 часть
+/*Описать процедуру Minmax(X, Y), записывающую в переменную X 
+минимальное из значений X и Y, а в переменную Y — максимальное из этих значений (X 
+и Y — вещественные параметры, являющиеся одновременно входными и выходными). 
+Используя четыре вызова этой процедуры, найти минимальное и максимальное из данных 
+чисел A, B, C, D. */
+
+double Minmax(double X, double Y)
+{
+    if (X > Y)
+    {
+        double i = X;
+        Y = X;
+
+    }
+}
